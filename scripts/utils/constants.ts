@@ -4,6 +4,7 @@ import { argv } from 'yargs';
 const __DEV__ = process.env.NODE_ENV !== 'production';
 const ENABLE_ANALYZE = !!argv.analyze;
 const ENABLE_OPEN = argv.open as true | string;
+const COPYRIGHT = '';
 
 const HOST = '127.0.0.1';
 const DEFAULT_PORT = 3000;
@@ -16,6 +17,7 @@ export {
     __DEV__,
     ENABLE_ANALYZE,
     ENABLE_OPEN,
+    COPYRIGHT,
     HOST,
     DEFAULT_PORT,
     PROJECT_NAME,
